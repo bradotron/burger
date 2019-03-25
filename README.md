@@ -1,5 +1,4 @@
-# FriendFinder
-A compatibility based "Friend Finder" app. A small full-stack project demonstrating some basic node.js and express skills.
+# burger
 
 # Deployed on Heroku
-[Link to App](https://young-plains-41715.herokuapp.com/)
+[Link to App]()
