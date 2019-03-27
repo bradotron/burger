@@ -1,2 +1,33 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class="container my-4">
+  <div class="jumbotron">
+    <h1>{{title}}</h1>
+    <hr class="my-4">
+    <p>Add burgers to by entering a name and clicking 'Add Burger'. Then devour burgers by clicking 'Devour'.</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        {{!-- undevoured burgers go here --}}
+        <div class="card ">
+          <div class="card-header">
+            Fresh Meat!
+          </div>
+          <div class="card-body">
+            <p>some burgers and devour buttons</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        {{!-- devoured burgers go here --}}
+        <div class="card ">
+          <div class="card-header">
+            Sold Out!
+          </div>
+          <div class="card-body">
+            <p>some devoured burgers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
