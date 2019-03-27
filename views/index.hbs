@@ -13,7 +13,15 @@
             Fresh Meat!
           </div>
           <div class="card-body">
-            <p>some burgers and devour buttons</p>
+            {{#each burgers}}
+              {{#if this.devoured}}
+              {{else}}
+              <div class="card">
+              <p class="mx-auto my-1">{{this.burger_name}}</p>
+              <button class="devour-btn mx-auto my-1" data-burgerId="{{this.id}}">Devour</button>
+              </div>
+              {{/if}}
+            {{/each}}
           </div>
         </div>
       </div>
@@ -24,7 +32,14 @@
             Sold Out!
           </div>
           <div class="card-body">
-            <p>some devoured burgers</p>
+            {{#each burgers}}
+              {{#if this.devoured}}
+              <div class="card">
+                <p class="mx-auto my-auto">{{this.burger_name}}</p>
+              </div>
+              {{else}}
+              {{/if}}
+            {{/each}}
           </div>
         </div>
       </div>
