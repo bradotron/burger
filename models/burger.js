@@ -19,7 +19,7 @@ var burger = {
 
   updateOne: function(objColsVals, condition) {
     return new Promise(function(resolve, reject) {
-      orm.insertOne(`burgers`, objColsVals, condition).then(function(result) {
+      orm.updateOne(`burgers`, objColsVals, condition).then(function(result) {
         resolve(result);
       });
     });

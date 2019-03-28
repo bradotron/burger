@@ -69,8 +69,7 @@ var orm = {
     return new Promise(function(resolve, reject) {
 
       let myQuery = `UPDATE  ${table} SET ${objToSql(objColVals)} WHERE ${condition}`;
-
-      connection.query(myQuery, values, function(err, result) {
+      connection.query(myQuery, function(err, result) {
         if (err) {
           reject(err);
         } else {
